@@ -88,7 +88,7 @@ with open('bak.rar', 'r+') as f:
   os.system(("curl https://hy17-hugerar.spb.ctf.su/network200.rar -H 'Range: bytes={}-{}' --output ar.rar").format(n+1, n+1+600))
 ```
 
-Добавляем содержимое скачанного архива ar.rar к имеющемуся bak1.rar и получаем следующую структуру: 
+Добавляем содержимое скачанного архива ar.rar к имеющемуся bak.rar и получаем следующую структуру: 
 
 ![second010](https://kerby.space/wu/hackyou/second010.png)
 
