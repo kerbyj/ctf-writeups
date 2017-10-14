@@ -1,5 +1,4 @@
 # Задание: We caught some evil hacker. What is his secret?
-========
 
 Скачиваем файл, это оказывается дамп памяти.
 
