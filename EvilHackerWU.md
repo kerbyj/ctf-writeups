@@ -4,7 +4,8 @@
 
 Используем программу Volatility.
 
-# 1. Раскукожим дамп и узнаем его метаданные.
+**1. Раскукожим дамп и узнаем его метаданные.**
+
 ```shell
 kerby@kerbydesktop ~/ctf> volatility imageinfo -f 20171009.mem 
 Volatility Foundation Volatility Framework 2.6
@@ -25,7 +26,8 @@ INFO    : volatility.debug    : Determining profile based on KDBG search...
 
 Круть, мы узнали его профиль. Переходим к следующему этапу.
 
-# 2. Узнаем больше информации, выведем запущенные процессы.(можно было пропустить)
+**2. Узнаем больше информации, выведем запущенные процессы.(можно было пропустить)**
+
 kerby@kerbydesktop ~/ctf> volatility -f 20171009.mem --profile=Win7SP1x86_23418 pstree
    
 ```shell
@@ -46,7 +48,8 @@ Name                                                  Pid   PPid   Thds   Hnds T
 
 Уже интереснее - видим архив, больше ничего цепляющего, запомним его PID - 3832. 
 
-# 3. Сдампим имеющиеся файлы, которые относятся к процессу 3832.
+**3. Сдампим имеющиеся файлы, которые относятся к процессу 3832.**
+
 Описание метода - https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#dumpfiles
 
 ```shell
@@ -61,9 +64,12 @@ SharedCacheMap 0x84e7dd30   3832   \Device\HarddiskVolume2\Users\hacker\Desktop\
 Сразу отмечаем архивы с расширением 7z, при открытии которых видим, что внутри завалялся flag.txt, но при 
 попытке открыть просит пароль. Ну что поделать, гуглим.
 
-# 4. Натыкаемся на программу mimikatz И потом на плагин для volatility.
+**4. Натыкаемся на программу mimikatz И потом на плагин для volatility.**
+
 https://xakep.ru/2012/11/22/extract-passwords-from-windows-memory/
+
 Сам плагин: https://github.com/sans-dfir/sift-files/blob/master/volatility/mimikatz.py
+
 Ставим его по этому туториалу https://www.computersecuritystudent.com/FORENSICS/LosBuntu/lesson4/index.html
 
 Запускаем:
@@ -81,4 +87,5 @@ wdigest  REV-1$           WORKGROUP
 ```
 
 Ну и собственно наш пароль - eeXuRee4Eokahm5i
-Флаг - # L33t_L1k3_L00K_D33P 
+
+Флаг - **L33t_L1k3_L00K_D33P**
