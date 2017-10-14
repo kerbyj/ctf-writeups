@@ -26,7 +26,7 @@ INFO    : volatility.debug    : Determining profile based on KDBG search...
 
 Круть, мы узнали его профиль. Переходим к следующему этапу.
 
-**2. Узнаем больше информации, выведем запущенные процессы.(можно было пропустить)**
+**2. Узнаем больше информации, выведем запущенные процессы.**
 
 kerby@kerbydesktop ~/ctf> volatility -f 20171009.mem --profile=Win7SP1x86_23418 pstree
    
