@@ -1,4 +1,8 @@
-# Задание: We caught some evil hacker. What is his secret?
+# Forensic 200. EvilHacker
+
+**Задание: We caught some evil hacker. What is his secret?**
+
+**Author: Khanov Arthur (awengar)**
 
 Скачиваем файл, это оказывается дамп памяти.
 
