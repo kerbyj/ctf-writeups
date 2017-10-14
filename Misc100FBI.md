@@ -4,6 +4,8 @@
 
 **Author: Kseniya Kravtsova (ksvark) and Vlad Roskov (vos)**
 
+Миссия найти |b}|{а
+
 **1. Ищем полезную инфу на исходном сайте**
 
 https://hy17-fbi.spb.ctf.su/
