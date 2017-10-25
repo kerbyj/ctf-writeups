@@ -106,7 +106,7 @@ with open('bak.rar', 'r+') as f:
     913715200+49+103866368+45+1236480000
     f.seek(n)  #1458688168 Перемещаемся к n-му байту от начала файла.
     f.write('\0')
-    os.system(("curl https://hy17-hugerar.spb.ctf.su/network200.rar -H 'Range: bytes={}-{}' --output suka1.rar").format(n+1, n+1+600))
+    os.system(("curl https://hy17-hugerar.spb.ctf.su/network200.rar -H 'Range: bytes={}-{}' --output bak.rar").format(n+1, n+1+600))
 ```
 
 
